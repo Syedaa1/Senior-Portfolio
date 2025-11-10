@@ -23,7 +23,6 @@ h1{
 
 
 /* === Navigation Bar === */
-/* === Navigation Bar === */
 header {
   position: fixed;
   width: 100%;
@@ -31,19 +30,19 @@ header {
   background: #1e1e2f;
   color: white;
   display: flex;
-  justify-content: flex-start; /* changed from space-between */
+  justify-content: flex-start; /* keep logo + nav aligned left together */
   align-items: center;
-  padding: 15px 30px; /* smaller padding moves everything left */
+  padding: 15px 80px; /* increased horizontal padding to move everything right */
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
   z-index: 1000;
-  gap: 40px; /* adds space between logo and nav */
+  gap: 60px; /* adds space between logo and nav items */
 }
 
 header .logo {
-  font-size: 1.4em;
+  font-size: 1.6em;
   font-weight: bold;
   letter-spacing: 1px;
-  white-space: nowrap; /* prevents logo wrapping */
+  white-space: nowrap;
 }
 
 nav ul {
@@ -51,11 +50,10 @@ nav ul {
   margin: 0;
   padding: 0;
   display: flex;
-  flex-wrap: wrap; /* ensures items wrap if needed on smaller screens */
 }
 
 nav ul li {
-  margin-left: 25px;
+  margin-left: 30px;
 }
 
 nav ul li a {
@@ -68,6 +66,7 @@ nav ul li a {
 nav ul li a:hover {
   color: #c5d2e3;
 }
+
 
 /* Offset for fixed header so sections aren’t hidden under it */
 section {
